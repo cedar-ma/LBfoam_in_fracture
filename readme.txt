@@ -27,7 +27,4 @@ Here is a quick rundown of how to use the LBFoam code. The workflow takes a few 
     a) This is all contained in foam_quality.py
     b) There are functions to plot foam quality and to visualize simulation the VOF output (like the foam_simulation_quality_geom_comparison.png figure)
 
-    
-Other comments:
-
-Inside this folder, I ended up running 5 different simulations. The simulations used for the TIPM and SPE papers are in tmp_rough2 and tmp_smooth2. The others were used for testing different parameters for bubble initialization, so they might be illustrative/helpful; the main idea is that you can use a denser configuration to reach a higher foam quality in fewer iterations. There are also some other python files not mentioned above that might be useful in the future, but they are not necessary to reproduce what we reported in the TIPM and SPE papers.
+   
