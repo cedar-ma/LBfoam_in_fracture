@@ -4,7 +4,7 @@ Here is a quick rundown of how to use the LBFoam code. The workflow takes a few 
     a) Clone the repo
         - https://github.com/mehdiataei/LBfoam
     b) Inside LBFoam repo directory, copy this folder into examples/lbfoam
-    c) cd into the foam_in_fractures_2D directory and run 'make' in the terminal to compile
+    c) cd into the LBfoam_in_fracture directory and run 'make' in the terminal to compile
     d) LBFoam github also does a pretty good job at explaining compilation in the readme but no docs!
 
 1) Geometry Prep
