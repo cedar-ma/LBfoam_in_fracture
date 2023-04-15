@@ -4,17 +4,17 @@ Here is a quick rundown of how to use the LBFoam code. The workflow takes a few 
 
 Clone the LBFoam repo
 ```
-$ git clone https://github.com/mehdiataei/LBfoam.git
+git clone https://github.com/mehdiataei/LBfoam.git
 ```
 Inside LBFoam repo directory, copy this current folder into examples/lbfoam
 ``` 
-$ cd examples/lbfoam/
-$ git clone https://github.com/cedar-ma/LBfoam_in_fracture.git
+cd examples/lbfoam/
+git clone https://github.com/cedar-ma/LBfoam_in_fracture.git
 ```
 Compile `bucket2D.cpp`
 ``` 
-$ cd LBfoam_in_fracture
-$ make
+cd LBfoam_in_fracture
+make
 ```
 
 (Note: To compile the software on MacOS, uncomment the ` -DPLB_MAC_OS_X` compilation flag in the Makefile).`cd LBfoam_in_fracture` directory and run `make` in the terminal to compile
@@ -29,13 +29,13 @@ $ make
 Create `tmp` folder to store the outputs (the output folder name must be the same as `outDir` variable in the `bucket2D.xml` file). Run the example using the following command. The `bucket2D.xml` contains the simulation parameters.
 
 ``` 
-$ ./bucket2D bucket2D.xml
+./bucket2D bucket2D.xml
 ```
 
 To run the example in parallel on TACC using 8 cores for example:
 
 ``` 
-$ ibrun -np 8 bucket2D bucket2D.xml
+ibrun -np 8 bucket2D bucket2D.xml
 ```
 
 Output files are:
