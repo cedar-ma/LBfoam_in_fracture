@@ -39,8 +39,8 @@ ibrun -np 8 bucket2D bucket2D.xml
 ```
 
 Output files are:
-- screenshots of gas fraction and smoothed VOF in output folder 
-- vti files in output folder containing:
+- screenshots of gas fraction and smoothed VOF in output `tmp` folder 
+- vti files in output `tmp` folder containing:
     - 'velocity', 'pressure', 'adDensity', 'volumeFraction', 'smoothedVolumeFraction', 'bubbleTags', 'disjoiningPressure'
 - log files for bubbles
 
