@@ -47,6 +47,6 @@ Output files are:
 ### Analysis and visualization
 
 This is all contained in [foam_quality.py](foam_quality.py).
-There are functions to plot foam quality and to visualize the VOF simulation output (like the foam_simulation_quality_geom_comparison.png figure)
+There are functions to plot foam quality and to visualize the VOF simulation output (like [foam_simulation_quality_geom_comparison.png](foam_simulation_quality_geom_comparison.png)) 
 
    
