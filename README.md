@@ -20,7 +20,7 @@ make
 (Note: To compile the software on MacOS, uncomment the ` -DPLB_MAC_OS_X` compilation flag in the Makefile).`cd LBfoam_in_fracture` directory and run `make` in the terminal to compile
     
 ### Geometry Prep
-- The **create_fracture_geoms_2d.py** file can be used to create a smooth fracture and/or a fracture from a raw image (reusing MPLBM code for palabos). The bubble placement algorithm is also in there and will create the data needed for LBFoam. At the bottom of the file, all the function calls are there. Some commands are commented out, but you can uncomment/edit as needed.
+- The [create_fracture_geoms_2d.py](create_fracture_geoms_2d.py) file can be used to create a smooth fracture and/or a fracture from a raw image (reusing MPLBM code for palabos). The bubble placement algorithm is also in there and will create the data needed for LBFoam. At the bottom of the file, all the function calls are there. Some commands are commented out, but you can uncomment/edit as needed.
 - Outputs will be:
     - geomtry files (saved to `input` directory)
     - bubble nucleation x and y points (saved as separate txt files under the specified simulation output `tmp` folder)
@@ -46,7 +46,7 @@ Output files are:
 
 ### Analysis and visualization
 
-This is all contained in `foam_quality.py`
+This is all contained in [foam_quality.py](foam_quality.py).
 There are functions to plot foam quality and to visualize the VOF simulation output (like the foam_simulation_quality_geom_comparison.png figure)
 
    
