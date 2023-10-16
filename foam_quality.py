@@ -36,10 +36,10 @@ def calculate_quality_over_sim(nx, ny, tmp_folder, geom_file, data_savename, ski
 
         # print(foam_mesh.array_names)
         # ['velocity', 'pressure', 'adDensity', 'volumeFraction', 'smoothedVolumeFraction', 'bubbleTags', 'disjoiningPressure']
-        foam_vof = foam_mesh.get_array('volumeFraction').reshape([ny, nx, 1])
+        foam_vof = foam_mesh.get_array('volumeFraction').reshape([1, ny, nx])
 
         fracture = np.fromfile(geom_file, dtype=np.int8).reshape([nx, ny, 1])
-        fracture = fracture.transpose([1, 0, 2])
+        fracture = fracture.transpose([2, 1, 0])
 
         foam_vof_calc = np.where(fracture==0, foam_vof, -1)
 
