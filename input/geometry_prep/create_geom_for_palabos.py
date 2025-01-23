@@ -39,7 +39,10 @@ def create_geom_for_palabos(inputs):
                             # for tight/ low porosity geometries
 
     rock     = erase_regions(rock)
-    rock.transpose([1, 0, 2])
+    print('rock shape', rock.shape)
+    # rock = np.rot90(rock)
+    
+    # rock = rock.transpose([1, 0, 2]) # Comment out to Make the fracture horizontal
     print('erase regions', rock.shape)
     rock4sim, geom_name = create_geom_edist(rock, geom)  # provides an efficient geometry for simulation
     print('create geom edist', rock.shape)
@@ -52,6 +55,6 @@ def create_geom_for_palabos(inputs):
     plt.show()
 
     rock4sim.flatten().tofile(sim_dir + '/' + input_dir + f'{geom_name}.dat')  # Save geometry
-
+    # print('Save geometry!')
     return
 

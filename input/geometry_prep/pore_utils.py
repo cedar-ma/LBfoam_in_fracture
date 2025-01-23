@@ -40,7 +40,7 @@ def create_geom_edist(rock, args):
         NotImplementedError('Feature not yet implemented')
         
     if args.num_slices:
-        erock = np.pad(erock, [(args.num_slices,args.num_slices), (0,0), (0,0)])
+        erock = np.pad(erock, [(0,0), (args.num_slices,args.num_slices), (0,0)])
 
     if args.print_size:
         size = erock.shape
